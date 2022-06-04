@@ -333,7 +333,7 @@ if __name__ == '__main__':
                 train_set_dict[user_id][item_id] = user_item_ratings[user_id][item_id]
             for x in range(-4, 0):
                 test_set_list.append((user_id, item_list[x], user_item_ratings[user_id][item_list[x]]))
-                test_set_dict[user_id][item_id] = user_item_ratings[user_id][item_list[x]]
+                test_set_dict[user_id][item_id[x]] = user_item_ratings[user_id][item_list[x]]
 
         if item_list.__len__() > 4:
             train_set[user_id] = item_list[:-2]
